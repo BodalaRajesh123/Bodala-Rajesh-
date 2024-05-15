@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Profile</title>
+</head>
+
+<body>
+    <h2>Create Profile</h2>
+    <form action="create_profile.php" method="post">
+        <input type="hidden" name="user_id" value="<?php echo $_GET['user_id']; ?>">
+        <label for="dietary_preferences">Dietary Preferences:</label><br>
+        <input type="text" id="dietary_preferences" name="dietary_preferences" required><br>
+        <label for="allergies">Allergies:</label><br>
+        <input type="text" id="allergies" name="allergies" required><br>
+        <label for="cooking_skill">Cooking Skill:</label><br>
+        <input type="text" id="cooking_skill" name="cooking_skill" required><br>
+        <label for="ingredient_preferences">Ingredient Preferences:</label><br>
+        <input type="text" id="ingredient_preferences" name="ingredient_preferences"><br>
+        <label for="ingredient_avoidances">Ingredient Avoidances:</label><br>
+        <input type="text" id="ingredient_avoidances" name="ingredient_avoidances"><br>
+        <button type="submit">Create Profile</button>
+    </form>
+</body>
+
+</html>
